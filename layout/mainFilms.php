@@ -14,19 +14,19 @@
                         <th scope="row">1 <?= $film_1->get_title() ?></th>
                         <td class="text-center"><?= $film_1->get_vote() ?></td>
                         <td class="text-center"><?= $film_1->get_lang() ?></td>
-                        <td class="text-center"><?= $book_1->get_genre()->get_type() ?>/<?= $book_1->get_genre()->get_description() ?> </td>
+                        <td class="text-center"><?= $film_1->get_genre()->get_type() ?>/<?= $film_1->get_genre()->get_description() ?> </td>
                     </tr>
                     <tr>
                         <th scope="row">2 <?= $film_2->get_title() ?></th>
                         <td class="text-center"><?= $film_2->get_vote() ?></td>
                         <td class="text-center"><?= $film_2->get_lang() ?></td>
-                        <td class="text-center"><?= $book_2->get_genre()->get_type() ?>/<?= $book_2->get_genre()->get_description() ?> </td>
+                        <td class="text-center"><?= $film_2->get_genre()->get_type() ?>/<?= $film_2->get_genre()->get_description() ?> </td>
                     </tr>
                     <tr>
                         <th scope="row">3 <?= $film_3->get_title() ?></th>
                         <td class="text-center"><?= $film_3->get_vote() ?></td>
                         <td class="text-center"><?= $film_3->get_lang() ?></td>
-                        <td class="text-center"><?= $book_3->get_genre()->get_type() ?>/<?= $book_3->get_genre()->get_description() ?> </td>
+                        <td class="text-center"><?= $film_3->get_genre()->get_type() ?>/<?= $film_3->get_genre()->get_description() ?> </td>
                     </tr>
                     <tr>
                         <th class="text-danger">

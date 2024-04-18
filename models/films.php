@@ -29,6 +29,9 @@ class Films
     {
         return $this->lang;
     }
+    public function get_genre(){
+        return $this->genre;
+    }
 
 
     // methods
