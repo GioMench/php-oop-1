@@ -9,9 +9,9 @@ $book_1 = new Books('Harry Potter', 10, 'inglese', new Genre('fantasy', 'magic')
 $book_2 = new Books('Legendborn', 8, 'inglese',new Genre('fantasy', 'romatinc') );
 $book_3 = new Books('Città di Ossa', 9, 'italiano', new Genre('fantasy','horror') );
 
-$film_1 = new Films('Donnie Darko', 7, 'inglese');
-$film_2 = new Films('Inception', 8, 'italiano');
-$film_3 = new Films('Life', 8, 'inglese');
+$film_1 = new Films('Donnie Darko', 7, 'inglese', new Genre('fantasy','drammatic') );
+$film_2 = new Films('Inception', 8, 'italiano', new Genre('fantasy','scientific') );
+$film_3 = new Films('Life', 8, 'inglese', new Genre('fantasy','scientific') );
 
 //var_dump($book_1->get_title());
 //var_dump($film_2->get_title());

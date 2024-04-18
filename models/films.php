@@ -5,11 +5,12 @@ class Films
     public $vote;
     public $lang;
 
-    public function __construct($title, $vote, $lang)
+    public function __construct($title, $vote, $lang, $genre)
     {
         $this->title = $title;
         $this->vote = $vote;
         $this->lang = $lang;
+        $this->genre = $genre;
 
     }
 
