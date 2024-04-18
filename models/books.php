@@ -4,12 +4,15 @@ class Books
     public $title;
     public $vote;
     public $lang;
+    public $genre;
 
-    public function __construct($title, $vote, $lang)
+    public function __construct($title, $vote, $lang, $genre )
     {
         $this->title = $title;
         $this->vote = $vote;
         $this->lang = $lang;
+        $this->genre = $genre;
+
 
     }
 
@@ -28,6 +31,11 @@ class Books
     {
         return $this->lang;
     }
+    public function get_genre()
+    {
+        return $this->genre;
+    }
+
 
 
     // methods
