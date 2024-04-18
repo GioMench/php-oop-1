@@ -1,4 +1,5 @@
 <?php
+
 require_once __DIR__ . "./models/books.php";
 require_once __DIR__ . "./models/films.php";
 require_once __DIR__ . "./models/genre.php";
@@ -19,6 +20,7 @@ $film_3 = new Films('Life', 8, 'inglese', new Genre('fantasy','scientific') );
 ?>
 
 <!doctype html>
+    <!--head-doc-->
     <?php include_once __DIR__ . '/layout/head.php'; ?>
 
 <body class="bg-secondary">
@@ -26,12 +28,13 @@ $film_3 = new Films('Life', 8, 'inglese', new Genre('fantasy','scientific') );
     <div class="container">
 
         <h1 class="text-center p-3 text-white">TOP 3 BOOKS AND FILMS OF THE MONTH</h1>
-
+        <!--books-table-section-->
         <?php include_once __DIR__ . '/layout/mainBooks.php'; ?>
+        <!--films-table-section-->
         <?php include_once __DIR__ . '/layout/mainFilms.php'; ?>
 
     </div>
-
+    <!--cdn-->
     <?php include_once __DIR__ . '/layout/foo.php'; ?>
 </body>
 
