@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ ."/genre.php";
+require_once __DIR__ . "/genre.php";
 class Books
 {
     public $title;
@@ -8,7 +8,7 @@ class Books
     public $genre;
     public $type;
 
-    public function __construct($type ,$title, $vote, $lang, $genre )
+    public function __construct($type, $title, $vote, $lang, $genre)
     {
         $this->title = $title;
         $this->vote = $vote;
@@ -38,7 +38,8 @@ class Books
     {
         return $this->genre;
     }
-    public function get_type(){
+    public function get_type()
+    {
         return $this->type;
     }
 

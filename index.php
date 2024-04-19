@@ -15,8 +15,6 @@ require_once __DIR__ . "./dp.php";
     <div class="container">
 
         <h1 class="text-center p-3 text-white">TOP 3 BOOKS AND FILMS OF THE MONTH</h1>
-        <!--books-table-section-->
-
         <table class="table">
             <thead>
                 <tr>
@@ -30,9 +28,10 @@ require_once __DIR__ . "./dp.php";
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($productions as $production) : ?>
+                <?php foreach ($productions as $production): ?>
                     <tr>
-                        <th scope="row"><span class="text-uppercase fw-bold"><?= $production->get_type() ?> : </span><?= $production->get_title() ?></th>
+                        <th scope="row"><span class="text-uppercase fw-bold"><?= $production->get_type() ?> :
+                            </span><?= $production->get_title() ?></th>
                         <td class="text-center"><?= $production->get_vote() ?></td>
                         <td class="text-center"><?= $production->get_lang() ?></td>
                         <td class="text-center">
@@ -40,13 +39,8 @@ require_once __DIR__ . "./dp.php";
                         </td>
                     </tr>
                 <?php endforeach ?>
-            </tbody> 
-        </table>       
-
-
-            
-
-
+            </tbody>
+        </table>
     </div>
     <!--cdn-->
     <?php include_once __DIR__ . '/layout/foo.php'; ?>
