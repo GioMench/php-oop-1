@@ -1,9 +1,9 @@
 <?php 
 class SerieTv{
     
-    public $numberSaghe;
+    public $numberSeason;
 
-    public function __construct($numberSaghe){
-        $this->numberSaghe = $numberSaghe;
+    public function __construct($numberSeason){
+        $this->numberSeason = $numberSeason;
     }
 }
