@@ -1,27 +1,14 @@
 <?php
 
-require_once __DIR__ . "./models/books.php";
-require_once __DIR__ . "./models/films.php";
-require_once __DIR__ . "./models/genre.php";
-
-
-
-$book_1 = new Books('Harry Potter', 10, 'inglese', new Genre('fantasy', 'magic') );
-$book_2 = new Books('Legendborn', 8, 'inglese',new Genre('fantasy', 'romatinc') );
-$book_3 = new Books('Città di Ossa', 9, 'italiano', new Genre('fantasy','horror') );
-
-$film_1 = new Films('Donnie Darko', 7, 'inglese', new Genre('fantasy','drammatic') );
-$film_2 = new Films('Inception', 8, 'italiano', new Genre('fantasy','scientific') );
-$film_3 = new Films('Life', 8, 'inglese', new Genre('fantasy','scientific') );
+require_once __DIR__ . "./dp.php";
 
 //var_dump($book_1->get_title());
 //var_dump($film_2->get_title());
-
 ?>
 
 <!doctype html>
-    <!--head-doc-->
-    <?php include_once __DIR__ . '/layout/head.php'; ?>
+<!--head-doc-->
+<?php include_once __DIR__ . '/layout/head.php'; ?>
 
 <body class="bg-secondary">
 
@@ -29,9 +16,36 @@ $film_3 = new Films('Life', 8, 'inglese', new Genre('fantasy','scientific') );
 
         <h1 class="text-center p-3 text-white">TOP 3 BOOKS AND FILMS OF THE MONTH</h1>
         <!--books-table-section-->
-        <?php include_once __DIR__ . '/layout/mainBooks.php'; ?>
-        <!--films-table-section-->
-        <?php include_once __DIR__ . '/layout/mainFilms.php'; ?>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">BOOKS/FILMS</th>
+                    <th scope="col" class="text-center">Vote</th>
+                    <th scope="col" class="text-center">Language</th>
+                    <th scope="col" class="text-center">More info</th>
+
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($productions as $production) : ?>
+                    <tr>
+                        <th scope="row"><span class="text-uppercase fw-bold"><?= $production->get_type() ?> : </span><?= $production->get_title() ?></th>
+                        <td class="text-center"><?= $production->get_vote() ?></td>
+                        <td class="text-center"><?= $production->get_lang() ?></td>
+                        <td class="text-center">
+                            <?= $production->get_genre()->get_type() ?>/<?= $production->get_genre()->get_description() ?>
+                        </td>
+                    </tr>
+                <?php endforeach ?>
+            </tbody> 
+        </table>       
+
+
+            
+
 
     </div>
     <!--cdn-->
