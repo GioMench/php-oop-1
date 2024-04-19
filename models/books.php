@@ -44,10 +44,4 @@ class Books
 
 }
 
-class Saghe {
-    public function __construct(public $sTitle){
-        $this->sTitle = $sTitle;
-    }
-
-}
 

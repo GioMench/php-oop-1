@@ -43,12 +43,4 @@ class Films
         return $this->type;
     }
     
-
-    // methods
-    /*ublic function best_film()
-    {
-        echo $this->title . ': è il più visto questo mese!';
-    }*/
-
-
 }
