@@ -8,6 +8,7 @@ class Books
     public $genre;
     public $type;
 
+
     public function __construct($type, $title, $vote, $lang, $genre)
     {
         $this->title = $title;
@@ -15,8 +16,6 @@ class Books
         $this->lang = $lang;
         $this->genre = $genre;
         $this->type = $type;
-
-
     }
 
     //getters
@@ -43,13 +42,16 @@ class Books
         return $this->type;
     }
 
+}
 
-
-    // methods
-    public function best_book()
-    {
-        echo $this->title . ': è il più venduto questo mese!';
+class Saghe {
+    public function __construct(public $sTitle){
+        $this->sTitle = $sTitle;
     }
 
+}
 
+class BookSaghe extends Books {
+    public $saghe;
+    public function __construct() {}
 }

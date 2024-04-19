@@ -8,6 +8,7 @@ class Films
     public $lang;
     public $genre;
     public $type;
+    
     public function __construct($type, $title, $vote, $lang, $genre)
     {
         $this->title = $title;
@@ -15,7 +16,7 @@ class Films
         $this->lang = $lang;
         $this->genre = $genre;
         $this->type = $type;
-
+        
     }
 
     //getters
@@ -41,13 +42,13 @@ class Films
     {
         return $this->type;
     }
-
+    
 
     // methods
-    public function best_film()
+    /*ublic function best_film()
     {
         echo $this->title . ': è il più visto questo mese!';
-    }
+    }*/
 
 
 }
