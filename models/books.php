@@ -51,7 +51,3 @@ class Saghe {
 
 }
 
-class BookSaghe extends Books {
-    public $saghe;
-    public function __construct() {}
-}
