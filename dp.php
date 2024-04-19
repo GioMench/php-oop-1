@@ -3,6 +3,8 @@
 require_once __DIR__ . "./models/books.php";
 
 require_once __DIR__ . "./models/genre.php";
+require_once __DIR__ . "./models/movies.php";
+require_once __DIR__ . "./models/serieTv.php";
 
 $productions = [
 
@@ -14,3 +16,6 @@ $productions = [
     
 
 ];
+
+
+
