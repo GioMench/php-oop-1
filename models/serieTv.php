@@ -1,19 +1,13 @@
 <?php
-class SerieTv
+class SerieTv extends Books
 {
 
-    public $numberSeason;
-
-    public function __construct($numberSeason)
+    public function __construct(public $type, public $title,public $vote,public $lang, public $genre, public $numberSeason)
     {
-        $this->numberSeason = $numberSeason;
+       parent::__construct($type, $title, $vote, $lang, $genre);
     }
     public function getSeason()
     {
         return $this->numberSeason;
-    }
-    public function setSeason($numberSeason)
-    {
-        $this->numberSeason = $numberSeason;
     }
 }

@@ -51,6 +51,7 @@ require_once __DIR__ . "./dp.php";
                             <?= $production->get_genre()->get_type() ?>/<?= $production->get_genre()->get_description() ?>
                         </td>
                         
+                        
 
                     </tr>
                 <?php endforeach ?>

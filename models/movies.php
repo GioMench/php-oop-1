@@ -1,12 +1,9 @@
 <?php
-class Movies
+class Movies extends Books 
 {
-    public $profits;
-    public $time;
-    public function __construct($profits, $time)
+    public function __construct(public $type, public $title,public $vote,public $lang, public $genre, public $profits, public $time)
     {
-        $this->profits = $profits;
-        $this->time = $time;
+       parent::__construct($type, $title, $vote, $lang, $genre);
     }
     public function getProfits()
     {
